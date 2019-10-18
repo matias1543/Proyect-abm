@@ -1,0 +1,1 @@
+"# Proyecto-ASP.NET-CORE"  initgit add README.mdgit commit -m "first commit"git remote add origin https://github.com/matias1543/Proyecto-ASP.NET-CORE.gitgit push -u origin master

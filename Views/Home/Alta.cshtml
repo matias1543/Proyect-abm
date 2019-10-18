@@ -1,0 +1,60 @@
+@{
+    ViewData["Title"] = "Alta";
+}
+<h2>Alta</h2>
+<h3>Agregar alimento balanceado</h3>
+
+<div class="row">
+    <div class="col-md-6">
+        <form acion='@Url.Action("DatosProducto", "Home")' method="post">
+            <div class="form-group">
+                <label for="nombre">Nombre del producto</label>
+                <input type="text" class="form-control" id="nombre" name="nombre" required />
+            </div>
+            <div class="form-group">
+                <label for="tipo-alimento">Tipo de alimento</label>
+                <select class="form-control" id="tipo-alimento" name="tipo-alimento">
+                    <option value="">Seleccionar tipo de alimento</option>
+                    <option value="S">Seco</option>
+                    <option value="H">Humedo</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="tipo-mascota">Tipo de mascota</label>
+                <select class="form-control" id="tipo-mascota" name="tipo-mascota">
+                    <option value="">Seleccionar tipo de mascota</option>
+                    <option value="G">Gato</option>
+                    <option value="P">Perro</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="edad-mascota">Edad de mascota</label>
+                <select class="form-control" id="edad-mascota" name="edad-mascota">
+                    <option value="">Seleccionar edad de mascota</option>
+                    <option value="C">Cachorro</option>
+                    <option value="A">Adulto</option>
+                    <option value="S">Senior</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="tamanio-mascota">Tamaño de mascota</label>
+                <select class="form-control" id="tamanio-mascota" name="tamanio-mascota">
+                    <option value="">Seleccionar tamaño de mascota</option>
+                    <option value="C">Chico</option>
+                    <option value="M">Mediano</option>
+                    <option value="GR">Grande</option>
+                    <option value="GI">Gigante</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="kg">Kilogramos</label>
+                <input type="text" class="form-control" id="kg" name="kg" required />
+            </div>
+            <div class="form-group">
+                <label for="precio">Precio</label>
+                <input type="text" class="form-control" id="precio" name="precio" required />
+            </div>
+             <button type="submit" class="btn btn-primary mb-2">Guardar</button>
+        </form>
+    </div>
+</div>
